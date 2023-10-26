@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using University_Portal.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<PortalDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PortalDbContext") ?? throw new InvalidOperationException("Connection string 'PortalDbContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
