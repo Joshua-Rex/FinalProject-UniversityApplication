@@ -27,6 +27,12 @@ namespace University_Portal.Controllers
                         Problem("Entity set 'PortalDbContext.Students'  is null.");
         }
 
+        // GET: Students/Login
+        public IActionResult Login()
+        {
+            return View();
+        }
+
         // GET: Students/Details/5
         public async Task<IActionResult> Details(uint? id)
         {
