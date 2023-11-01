@@ -1,9 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using University_Portal.Data;
+using Microsoft.AspNetCore.Identity;
+using University_Portal.Areas.Identity.Data;
+
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<PortalDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("PortalDbContext") ?? throw new InvalidOperationException("Connection string 'PortalDbContext' not found.")));
+builder.Services.AddDbContext<UsersDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PortalDbContext") ?? throw new InvalidOperationException("Connection string 'UsersDbContext' not found.")));
+
+builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<UsersDbContext>();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

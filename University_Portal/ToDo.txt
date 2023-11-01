@@ -1,0 +1,3 @@
+﻿Look into identity and how to make a login using that
+Apply roles to the user database (student, tutor)
+Authorise certain pages to only be accessable to tutors
