@@ -16,6 +16,50 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\joshu\source\repos\FinalProject-UniversityApplication\University_Portal
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Admin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Admin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Admin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Courses/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +78,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Courses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Events/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Events/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Events/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Events/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Events/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Home/Index.cshtml]
@@ -68,88 +132,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Shared/_RolePagesPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Sb2xlUGFnZXNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/StudentEvents/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudEV2ZW50c1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/StudentEvents/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudEV2ZW50c1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/StudentEvents/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudEV2ZW50c1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/StudentEvents/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudEV2ZW50c1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/StudentEvents/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudEV2ZW50c1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Students/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Students/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Students/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Students/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Students/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/TutorEvents/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JFdmVudHNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/TutorEvents/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JFdmVudHNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/TutorEvents/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JFdmVudHNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/TutorEvents/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JFdmVudHNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/TutorEvents/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JFdmVudHNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Tutors/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JzXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Tutors/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JzXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Tutors/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JzXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Tutors/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JzXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Tutors/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/joshu/source/repos/FinalProject-UniversityApplication/University_Portal/Views/Universities/Create.cshtml]

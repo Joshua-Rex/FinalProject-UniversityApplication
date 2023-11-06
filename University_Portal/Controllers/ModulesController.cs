@@ -12,9 +12,9 @@ namespace University_Portal.Controllers
 {
     public class ModulesController : Controller
     {
-        private readonly PortalDbContext _context;
+        private readonly UsersDbContext _context;
 
-        public ModulesController(PortalDbContext context)
+        public ModulesController(UsersDbContext context)
         {
             _context = context;
         }
@@ -22,9 +22,9 @@ namespace University_Portal.Controllers
         // GET: Modules
         public async Task<IActionResult> Index()
         {
-            return _context.Modules != null ?
-                        View(await _context.Modules.ToListAsync()) :
-                        Problem("Entity set 'PortalDbContext.Modules'  is null.");
+              return _context.Modules != null ? 
+                          View(await _context.Modules.ToListAsync()) :
+                          Problem("Entity set 'UsersDbContext.Modules'  is null.");
         }
 
         // GET: Modules/Details/5
@@ -143,21 +143,21 @@ namespace University_Portal.Controllers
         {
             if (_context.Modules == null)
             {
-                return Problem("Entity set 'PortalDbContext.Modules'  is null.");
+                return Problem("Entity set 'UsersDbContext.Modules'  is null.");
             }
             var modules = await _context.Modules.FindAsync(id);
             if (modules != null)
             {
                 _context.Modules.Remove(modules);
             }
-
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ModulesExists(uint id)
         {
-            return (_context.Modules?.Any(e => e.id == id)).GetValueOrDefault();
+          return (_context.Modules?.Any(e => e.id == id)).GetValueOrDefault();
         }
     }
 }

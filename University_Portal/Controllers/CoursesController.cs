@@ -12,9 +12,9 @@ namespace University_Portal.Controllers
 {
     public class CoursesController : Controller
     {
-        private readonly PortalDbContext _context;
+        private readonly UsersDbContext _context;
 
-        public CoursesController(PortalDbContext context)
+        public CoursesController(UsersDbContext context)
         {
             _context = context;
         }
@@ -22,9 +22,9 @@ namespace University_Portal.Controllers
         // GET: Courses
         public async Task<IActionResult> Index()
         {
-            return _context.Courses != null ?
-                        View(await _context.Courses.ToListAsync()) :
-                        Problem("Entity set 'PortalDbContext.Courses'  is null.");
+              return _context.Courses != null ? 
+                          View(await _context.Courses.ToListAsync()) :
+                          Problem("Entity set 'UsersDbContext.Courses'  is null.");
         }
 
         // GET: Courses/Details/5
@@ -143,21 +143,21 @@ namespace University_Portal.Controllers
         {
             if (_context.Courses == null)
             {
-                return Problem("Entity set 'PortalDbContext.Courses'  is null.");
+                return Problem("Entity set 'UsersDbContext.Courses'  is null.");
             }
             var courses = await _context.Courses.FindAsync(id);
             if (courses != null)
             {
                 _context.Courses.Remove(courses);
             }
-
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool CoursesExists(uint id)
         {
-            return (_context.Courses?.Any(e => e.id == id)).GetValueOrDefault();
+          return (_context.Courses?.Any(e => e.id == id)).GetValueOrDefault();
         }
     }
 }

@@ -12,9 +12,9 @@ namespace University_Portal.Controllers
 {
     public class UniversitiesController : Controller
     {
-        private readonly PortalDbContext _context;
+        private readonly UsersDbContext _context;
 
-        public UniversitiesController(PortalDbContext context)
+        public UniversitiesController(UsersDbContext context)
         {
             _context = context;
         }
@@ -22,9 +22,9 @@ namespace University_Portal.Controllers
         // GET: Universities
         public async Task<IActionResult> Index()
         {
-            return _context.Universities != null ?
-                        View(await _context.Universities.ToListAsync()) :
-                        Problem("Entity set 'PortalDbContext.Universities'  is null.");
+              return _context.Universities != null ? 
+                          View(await _context.Universities.ToListAsync()) :
+                          Problem("Entity set 'UsersDbContext.Universities'  is null.");
         }
 
         // GET: Universities/Details/5
@@ -143,21 +143,21 @@ namespace University_Portal.Controllers
         {
             if (_context.Universities == null)
             {
-                return Problem("Entity set 'PortalDbContext.Universities'  is null.");
+                return Problem("Entity set 'UsersDbContext.Universities'  is null.");
             }
             var universities = await _context.Universities.FindAsync(id);
             if (universities != null)
             {
                 _context.Universities.Remove(universities);
             }
-
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UniversitiesExists(uint id)
         {
-            return (_context.Universities?.Any(e => e.id == id)).GetValueOrDefault();
+          return (_context.Universities?.Any(e => e.id == id)).GetValueOrDefault();
         }
     }
 }
