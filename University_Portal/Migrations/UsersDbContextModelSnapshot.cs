@@ -251,7 +251,7 @@ namespace University_Portal.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Courses");
+                    b.ToTable("Courses", (string)null);
                 });
 
             modelBuilder.Entity("University_Portal.Models.Events", b =>
@@ -278,7 +278,7 @@ namespace University_Portal.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Events");
+                    b.ToTable("Events", (string)null);
                 });
 
             modelBuilder.Entity("University_Portal.Models.Modules", b =>
@@ -298,7 +298,7 @@ namespace University_Portal.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Modules");
+                    b.ToTable("Modules", (string)null);
                 });
 
             modelBuilder.Entity("University_Portal.Models.Universities", b =>
@@ -319,7 +319,7 @@ namespace University_Portal.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Universities");
+                    b.ToTable("Universities", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

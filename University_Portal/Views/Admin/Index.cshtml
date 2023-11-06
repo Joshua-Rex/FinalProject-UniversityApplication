@@ -1,0 +1,32 @@
+﻿@using University_Portal.Areas.Identity.Data;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>University Id</th>
+            <th>Student Name</th>
+            <th>Student Email</th>
+            <th>Assign Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in (List<User>)ViewData["Users"])
+        {
+            <tr>
+                <td>@Html.DisplayFor(identityUser => user.uniId)</td>
+                <td>@Html.DisplayFor(identityUser => user.name)</td>
+                <td>@Html.DisplayFor(identityUser => user.Email)</td>
+                <td>
+                    <a asp-action="CreateStudent" asp-route-id="@user.Id">Student</a> |
+                    <a asp-action="CreateTutor" asp-route-id="@user.Id">Tutor</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
