@@ -1,9 +1,4 @@
-﻿@using Microsoft.AspNetCore.Identity
-@using University_Portal.Areas.Identity.Data;
-@inject SignInManager<User> SignInManager;
-@inject UserManager<User> UserManager;
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -30,27 +25,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        @if (SignInManager.IsSignedIn(User))
-                        {
-                            @if (await UserManager.IsInRoleAsync(UserManager.GetUserAsync(User).Result, "Student"))
-                            {
-                                <li>
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Student" asp-action="Index">Student Page</a>
-                                </li>
-                            }
-                            else if (await UserManager.IsInRoleAsync(UserManager.GetUserAsync(User).Result, "Tutor"))
-                            {
-                                <li>
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Tutor" asp-action="Index">Tutor Page</a>
-                                </li>
-                            }
-                            else if (await UserManager.IsInRoleAsync(UserManager.GetUserAsync(User).Result, "Admin"))
-                            {
-                                <li>
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Admin Page</a>
-                                </li>
-                            }
-                        }
+                        <partial name="_RolePagesPartial" />
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

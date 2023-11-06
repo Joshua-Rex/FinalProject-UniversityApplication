@@ -22,8 +22,11 @@ namespace University_Portal.Controllers
         // GET: AdminController
         public async Task<ActionResult> Index()
         {
+            // Collects all the user id's and puts them in a list
             var allUserIds = _context.Users.Select(x => x.Id).ToList();
             List<User> newUsers = new List<User>();
+
+            // Filters the list to contain only new users
             for (int i = 0; i < allUserIds.Count; i++)
             {
                 var temp = await _context.Users.FindAsync(allUserIds[i]);
@@ -36,23 +39,30 @@ namespace University_Portal.Controllers
             return View();
         }
 
+        // Assigns the selected user as a Student and remove the New User role
         public async Task<IActionResult> CreateStudent(string id)
         {
+            // This shouldn't get hit and is purely a precaution
             if (id == null)
             {
                 return NotFound();
             }
+
+            // Finds the user by id and assigns it to the role of Student
             var user = await _context.Users.FindAsync(id);
             var result = await _userManager.AddToRoleAsync(user, "Student");
+            // Flags up any errors if they occur
             if (!result.Succeeded)
             {
-                return NotFound();
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
+
+            //Removes the role of New User
             result = await _userManager.RemoveFromRoleAsync(user, "NewUser");
+            // Flags up any errors if they occur
             if (!result.Succeeded)
             {
                 foreach (var error in result.Errors)
@@ -60,16 +70,24 @@ namespace University_Portal.Controllers
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
+
+            // Refreshes Index page
             return RedirectToAction(nameof(Index));
         }
+
+        // Assignes the selected user as a Tutor and removes the New User role
         public async Task<IActionResult> CreateTutor(string id)
         {
+            // This shouldn't get hit and is purely a precaution
             if (id == null)
             {
                 return NotFound();
             }
+
+            // Finds the user by id and assigns it to the role of Tutor
             var user = await _context.Users.FindAsync(id);
             var result = await _userManager.AddToRoleAsync(user, "Tutor");
+            // Flags up any errors if they occur
             if (!result.Succeeded)
             {
                 foreach (var error in result.Errors)
@@ -77,7 +95,10 @@ namespace University_Portal.Controllers
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
+
+            // Removes the role of New User
             result = await _userManager.RemoveFromRoleAsync(user, "NewUser");
+            // Flags up any errors if they occur
             if (!result.Succeeded)
             {
                 foreach (var error in result.Errors)
@@ -85,6 +106,8 @@ namespace University_Portal.Controllers
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
+
+            // Refreshes Index page
             return RedirectToAction(nameof(Index));
         }
 
